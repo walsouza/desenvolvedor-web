@@ -1,0 +1,83 @@
+.expn-cntn {
+  max-width: 1133px;
+}
+.container-carrossel {
+  position: relative;
+  padding: 15px;
+  max-width: 100%;
+  margin: 0 auto;
+  h4 {
+    margin-bottom: 30px;
+  }
+}
+
+.gallery-wrapper {
+  overflow-x: auto;
+  max-width: 1074px;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  opacity: 0.8;
+  cursor: pointer;
+  border: none;
+  z-index: 2;
+  @include d(m) {
+    display: none;
+  }
+  @include d(s) {
+    display: none;
+  }
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-right {
+  right: -10px;
+  left: auto;
+  text-align: right;
+  background: none;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.item {
+  width: 254px;
+  height: 486px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 0.8;
+  >p {
+    text-align: center;
+  }
+  img {
+    margin-bottom: 22px;
+  }
+}
+
+.current-item {
+  opacity: 1;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}

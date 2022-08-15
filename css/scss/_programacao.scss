@@ -1,0 +1,120 @@
+.programacao {
+  width: 100%;
+  padding: 60px 0 91px 0;
+  position: relative;
+  h1, h2 {
+    text-align: center;
+  }
+  h2 {
+    color: $branco;
+    text-transform: uppercase;
+    margin-top: 11px;
+  }
+}
+.flex-2 {
+  max-width: 444px;
+  flex: 1;
+  padding-top: 45px;
+  h3, h4 {
+    margin: 10px 0;
+  }
+  h4 {
+    text-transform: uppercase;
+  }
+  p {
+    margin-top: 32px;
+    font-weight: 300;
+  }
+}
+.flex-gap {
+  margin-top: 36px;
+  justify-content: space-between;
+}
+
+.flex-circles {
+  display: flex;
+  width: 538px;
+  align-items: flex-start;
+  justify-content: end;
+  flex-wrap: wrap;
+  @include d(m) {
+    max-width: $m-device;
+    justify-content: center;
+    align-items: center;
+  }
+  @include d(s) {
+    max-width: $s-device;
+    justify-content: center;
+  }
+  p {
+    color: $branco;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.circle-1 {
+  width: 202.49px;
+  height: 252.2px;
+  shape-outside: ellipse(50% 50%);
+  clip-path: ellipse(50% 50%);
+  transform: rotate(-25.11deg);
+  background: linear-gradient(0deg, #7833E7, #7833E7), #C4C4C4;
+  display: flex;
+  align-items: center;
+}
+.circle-2 {
+  width: 216.28px;
+  height: 282.37px;
+  background: linear-gradient(0deg, #CB2283, #CB2283), #C4C4C4;
+  transform: rotate(-37.23deg);
+  shape-outside: ellipse(50% 50%);
+  clip-path: ellipse(50% 50%);
+  display: flex;
+  align-items: center;
+  top: 40px;
+  left: -10px;
+  position: relative;
+  @include d(s) {
+    top: 0;
+    left: 0;
+  }
+}
+.div-circle-1 {
+  max-width: 151px;
+  margin: 0 auto;
+  transform: rotate(25.11deg);
+}
+.div-circle-2 {
+  max-width: 180px;
+  margin: 0 auto;
+  transform: rotate(37.23deg);
+}
+.prgm-2 {
+  position: relative;
+  justify-content: end;
+  margin-top: 10px;
+  @include d(m) {
+    justify-content: center;
+  }
+  @include d(s) {
+    justify-content: center;
+  }
+}
+.prgm-img {
+  position: absolute;
+  left: -110px;
+  top: 0;
+  width: auto;
+  height: 100%;
+  z-index: 0;
+  @include d(m) {
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+  }
+  @include d(s) {
+    position: relative;
+    left: 0;
+  }
+}

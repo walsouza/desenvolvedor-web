@@ -1,0 +1,191 @@
+body {
+  background: $cor-bg;
+  color: $branco;
+  
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  @include tipo-2(18);
+}
+
+strong {
+  font-weight: 600;
+}
+
+//Fontes 
+
+@font-face {
+    font-family: 'globotipo_textoblack';
+    src: url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-black-webfont.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'globotipo_textobold';
+    src: url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-bold-webfont.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'globotipo_textoregular';
+    src: url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-regular-webfont.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'globotipo_textolight';
+    src: url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-light-webfont.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/viniciusvasc13/globotipo@master/globotipotexto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+//shapes e efeitos
+
+.shape-menu {
+  width: 524px;
+  height: 228px;
+  position: absolute;
+  background: url('../img/shape-menu.png') no-repeat;
+  top: 0;
+  left: 0;
+  @include d(m) {
+    display: none;
+  }
+  @include d(s) {
+    display: none;
+  }
+}
+.blur-lateral {
+  position: absolute;
+  width: 841.05px;
+  height: 689.24px;
+  left: -575px;
+  top: 764.96px;
+
+  background: #CB2283;
+  opacity: 0.4;
+  filter: blur(400px);
+  border-radius: 500px;
+  transform: rotate(-24.36deg);
+}
+.shape-dir {
+  position: absolute;
+  max-width: 420px;
+  height: 1020px;
+  right: 0;
+  top: 648px;
+  @include d(m) {
+    display: none;
+  }
+  @include d(s) {
+    display: none;
+  }
+}
+.blur-contato {
+  position: absolute;
+  width: 841.05px;
+  height: 500.24px;
+  left: -615px;
+  top: 2930.96px;
+  background: #CB2283;
+  opacity: 0.2;
+  filter: blur(400px);
+  border-radius: 500px;
+  transform: rotate(-24.36deg);
+  @include d(m) {
+    display: none;
+  }
+  @include d(s) {
+    display: none;
+  }
+}
+
+//Fontes
+
+.fnt-globo-17 {
+  @include globo-700(17)
+}
+
+.fnt-globo-18 {
+  @include globo-700(18)
+}
+.fnt-globo-l-18 {
+  @include globo-400(18)
+}
+.fnt-globo-20 {
+  @include globo-700(20)
+}
+.fnt-globo-l-20 {
+  @include globo-400(20)
+}
+.fnt-globo-26 {
+  @include globo-700(26)
+}
+.fnt-globo-36 {
+  @include globo-700(36)
+}
+.fnt-globo-40 {
+  @include globo-700(40)
+}
+.fnt-globo-l-40 {
+  @include globo-400(40)
+}
+.fnt-globo-45 {
+  @include globo-700(45)
+}
+.fnt-globo-65 {
+  @include globo-700(65)
+}
+.fnt-gradiente { 
+  @include tipo-2(26);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: $fnt-gradiente;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.fnt-roboto-17 {
+  @include tipo-2(17);
+}
+.fnt-roboto-19 {
+  @include tipo-2(19);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.fnt-roboto-14 {
+  @include tipo-2(14);
+}
+.fnt-roboto-62 {
+  @include tipo-2(62);
+}

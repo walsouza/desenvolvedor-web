@@ -1,0 +1,170 @@
+//cores
+
+$branco: #fff;
+$cor-bg: linear-gradient(169.6deg, #201437 3.2%, #201437 50.11%);
+$roxo-btn-ctt: #7833E8;
+$roxo-btn: linear-gradient(0deg, #7833E7, #7833E7), linear-gradient(109.75deg, #FC1787 -19.65%, #7C2CFF 58.39%), #C4C4C4;
+$roxo-fnt: #CB2283;
+$bg-secundario: #160E26;
+$btn-hover: #D1268E;
+
+
+//Fontes-cor
+$fnt-cnt: #AE3898;
+$fnt-color-1: #CB2283;
+$fnt-gradiente: linear-gradient(135.68deg, #FC1787 -31.01%, #7C2CFF 79.3%), linear-gradient(90deg, #AE3898 0%, rgba(174, 56, 152, 0.62) 93.35%), linear-gradient(90deg, #AE3898 0%, rgba(228, 49, 104, 0.62) 93.35%, rgba(174, 56, 152, 0.62) 93.35%), #D1268E;
+
+
+//Circles
+$circle-1: linear-gradient(0deg, #7833E7, #7833E7), #C4C4C4;
+$circle-2: linear-gradient(0deg, #CB2283, #CB2283), #C4C4C4;
+
+
+
+
+//Fontes
+
+$fonte-1: 'globotipo_textobold';
+$fonte-2: 'Roboto', sans-serif;
+$fonte-3: 'globotipo_textolight';
+$fonte-4: 'Montserrat', sans-serif;;
+
+//Mixins de fontes
+
+@function em($pixel, $contexto: 16) {
+  @return $pixel / $contexto + em
+}
+
+@mixin mont($size) {
+  font-family: $fonte-3;
+  @if $size == 13 {
+    font-size: em(13);
+    line-height: em(16, 13);
+  }
+}
+@mixin globo-400($size) {
+  font-family: $fonte-3;
+  font-weight: 400;
+  @if $size == 18 {
+    font-size: em(18);
+    line-height: em(29, 18);
+  }
+  @else if $size == 20 {
+    font-size: em(20);
+    line-height: em(39, 20);
+  }
+  @else if $size == 26 {
+    font-size: em(26);
+    line-height: em(31, 26);
+  }
+  @else if $size == 36 {
+    font-size: em(36);
+    line-height: em(46, 36);
+  }
+  @else if $size == 40 {
+    font-size: em(40);
+    line-height: em(45, 40);
+  }
+  @else if $size == 65 {
+    font-size: em(65);
+    line-height: em(97, 65);
+  }
+}
+
+@mixin globo-700($size) {
+  font-family: $fonte-1;
+  font-weight: 700;
+  @if $size == 18 {
+    font-size: em(18);
+    line-height: em(29, 18);
+  }
+  @else if $size == 17 {
+    font-size: em(17);
+    line-height: em(23, 17);
+  }
+  @else if $size == 20 {
+    font-size: em(20);
+    line-height: em(39, 20);
+  }
+  @else if $size == 26 {
+    font-size: em(26);
+    line-height: em(31, 26);
+  }
+  @else if $size == 36 {
+    font-size: em(36);
+    line-height: em(46, 36);
+  }
+  @else if $size == 40 {
+    font-size: em(40);
+    line-height: em(45, 40);
+  }
+  @else if $size == 45 {
+    font-size: em(45);
+    line-height: em(50, 45);
+  }
+  @else if $size == 65 {
+    font-size: em(65);
+    line-height: em(70, 65);
+  }
+}
+
+@mixin tipo-2($size) {
+  font-family: $fonte-2;
+  @if $size == 14 {
+    font-size:  em(14);
+    line-height: em(17, 14);
+  }
+  @if $size == 16 {
+    font-size:  em(16);
+    line-height: em(28, 16);
+  }
+  @if $size == 17 {
+    font-size:  em(17);
+    line-height: em(20, 17);
+  }
+  @else if $size == 18 {
+    font-size: em(18);
+    line-height: em(30, 18)
+  }
+  @else if $size == 19 {
+    font-size: em(19);
+    line-height: em(26, 19)
+  }
+  @else if $size == 26 {
+    font-size: em(26);
+    line-height: em(30, 26)
+  }
+  @else if $size == 36 {
+    font-size: em(36);
+    line-height: em(48, 36)
+  }
+  @else if $size == 56 {
+    font-size: em(56);
+    line-height: em(68, 56)
+  }
+   @else if $size == 62 {
+    font-size: em(62);
+    line-height: em(75, 62)
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin btn-vx {
+  max-width: 474.26px;
+  height: 49.32px;
+  background: $roxo-btn;
+  border-radius: 28.4554px;
+  border: none;
+  color: $branco;
+  cursor: pointer;
+  transition: ease-in .5s;
+  @include globo-400(20);
+  &:hover {
+    background: $btn-hover;
+  }
+}
